@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function Flashcard() {
+function Flashcard({ word }) {
     const [flipped, setFlipped] = useState(false)
 
     return (
