@@ -5,7 +5,9 @@ function Flashcard({ word }) {
 
     return (
         <div className="cards-box" onClick={() => setFlipped(!flipped)}>
-            <div className="cards-content">{flipped ? word.ru : word.en}</div>
+            <div className={`content ${flipped ? 'flipped' : ''}`}>
+                {flipped ? word.ru : word.en}
+            </div>
         </div>
     )
 }
